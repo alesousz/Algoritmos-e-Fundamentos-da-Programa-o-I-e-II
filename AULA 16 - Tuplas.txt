@@ -1,0 +1,79 @@
+TUPLAS OU ARRAY É METODO NA PROGRAMAÇÃO QUANDO ESTAMOS FALANDO DE VARIAVEIS DE CONTROLE COM ESTRUTURAS COMPOSTAS.
+O que isso quer dizer?
+Quando estamos iniciando na programação, aprendemos que as variáveis são usadas para guardar informações na memoria RAM do seu computador
+No inicio nos deparamos com diversos problemas, pois queremos armazenar valores diferentes em uma mesma variavel. Assim, utilizamos diferentes metodos
+para alcançar os resultados esperados.
+Com a utilização de estruturas compostas como as TUPLAS, podemos armazenar mais de uma informação em uma mesma variavel.
+Veja a baixo funções, metodos e exemplos do que podemos utilizar as tuplas:
+
+#TUPLAS são imutáveis, ou seja,n podemos adicionar ou mudar os elementos dentro da tupla, somente mexemos nela quando a declaramos.
+
+----------------------------------------------------------------------
+
+lanche = ('Hamburger', 'Suco', 'Pizza', 'Pudim')
+lanche[1] = Camarão >>> ISSO TA ERRADO. N DA PARA ALTERAR O SUCO POR CAMARÃO.
+
+Tres maneiras de executar TUPLAS/ARRAY com for:
+Descobrir a posição dentro da tupla
+
+for comida in lanche:
+    print(f'Eu vou comer {comida}
+    Execução :
+                Eu vou comer hamburger
+                Eu vou comer Suco
+                Eu vou comer Pizza
+                Eu vou comer Pudim
+                
+----------------------------------------------------------------------
+
+METODOS PARA DESCOBRIR A POSIÇÃO DE UM ITEM DENTRO DA TUPLA
+
+for cont in range(0, len(lanche)):
+    print(f'Eu vou comer {lanche[cont] na posiçao {cont}')
+    Execução :
+                Eu vou comer Hamburger na posição 0
+                Eu vou comer Suco na posição 1
+                Eu vou comer Pizza na posição 2
+                Eu vou comer Pudim na posição 3
+
+===============================================================
+
+for pos, comida in enumerate (lanche):
+    print(f'Eu vou comer {comida} na posição {pos}')
+    Execução :
+                Eu vou comer Hamburger na posição 0
+                Eu vou comer Suco na posição 1
+                Eu vou comer Pizza na posição 2
+                Eu vou comer Pudim na posição 3
+
+----------------------------------------------------------------------
+
+METODO sorted (DEIXAR OS ITENS DA TUPLA ORDENADOS)
+
+print(sorted(lanche))
+Execução :
+              ['hamburger', 'pizza', 'pudim', 'suco']
+
+# NESSE CASO EM ESPECIFICO PERCEBEMOS QUE APOS O PRINT O SCRIPT DEVOLVEU UMA RESPOSTA EM [], OU SEJA,
+ COMO HOUVE UMA "ALTERAÇÃO" NA TUPLA, ELA É TRANSFORMADA EM UMA LISTA NO PRINT
+
+----------------------------------------------------------------------
+
+SOMA EM TUPLAS
+
+a = (2, 5, 6)
+b = (5, 6, 7, 12)
+c = a + b
+print(c)
+print(len(c))
+print(c.count(5)) - MOSTRA QUANTAS VEZES SE REPETIU O 5
+print(c.index(2)) - EM QUE POSIÇÃO SE ENCONTRA UM OBJETO DENTRO DA TUPLA
+Execução :
+              (2, 5, 6, 5, 6, 7, 12)
+              7
+              2
+              0
+#A ORDEM FAZ DIFERENÇA, SE FIZÉSSEMOS:
+ c = b + a
+ Execução :
+              (5, 6, 7, 12, 2, 5, 6)

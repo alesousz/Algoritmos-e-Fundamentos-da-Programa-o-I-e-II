@@ -1,0 +1,13 @@
+#Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada
+n = int(input('Digite um numero: '))
+x_1=int(n*1)
+x_2=int(n*2)
+x_3=int(n*3)
+x_4=int(n*4)
+x_5=int(n*5)
+x_6=int(n*6)
+x_7=int(n*7)
+x_8=int(n*8)
+x_9=int(n*9)
+x_10=int(n*10)
+print(f'A tabuada do numero {n} é :\n{n}x1={x_1}\n{n}x2={x_2}\n{n}x3={x_3}\n{n}x4={x_4}\n{n}x5={x_5}\n{n}x6={x_6}\n{n}x7={x_7}\n{n}x8={x_8}\n{n}x9={x_9}\n{n}x10={x_10}')
